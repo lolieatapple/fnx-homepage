@@ -11,69 +11,49 @@ export default function Home() {
     <div className="appContainer">
       <div className="sizeRestrictor">
         <main>
-          <Section_1 background_color="#224099">
+          <Section_1 background_color="#9A5EA4">
             <div className="main-contents">
               <div className="main_text_container">
                 <h1 className="main-title">
-                  About FinNexus...
+                  Token Dashboard
                 </h1>
                 <div className="main-aside">
-                  <p className="section-2-text"> <em><span className="section-2-opener">Redefining finance </span></em>
-                  <span  className="section-2-closer">is FinNexus's founding mission. The project was initiated by a group of blockchain industry veterans in 2019 with a focus on offerring new DeFi products that offer greater diversity, convenience, and value to investors.</span> </p>
+                  <p className="section-2-text"> <em><span className="section-2-opener">The FNX Token Dashboard </span></em>
+                  <span  className="section-2-closer">shows live data about the FNX token.</span> </p>
                 </div>
-                <img className="about_bg" src="bgshape_01.svg" />
+                <div className="fnx_circle">
+                  <div className="fnx_circle_content">FNX</div>
+                </div>
               </div>
             </div>
           </Section_1>
-      
-          
-          <div className="team-section">
-            <div className="team-size-restrictor">
-            
-            <div className="team core-team">
-              <div className="team-header-container">
-                <h3 className="team-title">Meet the Team</h3>
-              </div>
-            <div className="team-member-container">
-              <TeamMember name="Boris Yang" title="Founder & CEO" image="BorisYang.png" />
-              <TeamMember delay="100" name="Bob Chen" title="Co-founder & CTO" image="BobChen.png" />
-              <TeamMember delay="200" name="Ryan Tian" title="Financial Specialist" image="RyanTian.png" />
-              <TeamMember delay="300" name="Veerender Singh" title="Community Manager" image="VeerenderSingh.png" />
-              <TeamMember delay="400" name="Jack Tung" title="Legal Expert" image="JackTung.png" />
-              </div>
+          <div className="dashboard_container">
+            <div className="dashboard">
+
             </div>
-           
-            <div className="team advisor-team">
-              <div className="team-header-container">
-                <h3 className="section-header em-3 team-title">Advisory Group</h3>
-              </div>
-              <div className="team-member-container">
-                <TeamMember name="Nicholas Krapels" title="Strategy Advisor" image="NicholasKrapels.png" />
-                <TeamMember delay="100" name="Noah Maizels" title="Marketing Adviser" image="NoahMaizels.png" />
-                <TeamMember delay="200" name="Eason Zhang" title="FP of River Capital" image="EasonZhang.png" />
-                <TeamMember delay="300" name="Jack Lu" title="Wanchain Founder" image="JackLu.png" />
-              </div>
-            
-            </div>
- 
-            </div>
-           
           </div>
           
+          
         </main>
-        <p className="partners-title sub-section-header">Partners</p>
-        <div className="carousel-container">
-          <PartnerCarousel />
-        </div>
-        <p className="exchanges-title sub-section-header">Exchanges</p>
-        <div className="carousel-container">
-          <ExchangesCarousel />
-        </div>
+        
          <Footer />
       </div>
 
       <style jsx>{`
+        .fnx_circle {
+          border-radius: 100%;
+          border: 10px solid white;
+          width: 200px;
+          height: 200px;
+          padding: 40px;
+        }
+        .fnx_circle_content {
+          border-radius: 100%;
+          border: 2px solid #A2D9DA;
+          width: 100px;
+          height: 100px;
 
+        }
         .section_1_large_bg{
           display: none;
         }
