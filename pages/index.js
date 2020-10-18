@@ -460,10 +460,10 @@ export default function Home() {
             width: 50%; 
           } 
           .section_2 {
-            width: 700px;
+            width: 800px;
           }
           .section_3 {
-            width: 700px;
+            width: 800px;
             margin-top: 50px;
             bottom: 0;
           }
